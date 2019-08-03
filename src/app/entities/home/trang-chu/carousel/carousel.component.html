@@ -1,50 +1,131 @@
-<!-- <ng-container *ngIf="phim[0]">
-  <img [src]="phim[0].hinhAnh">
-</ng-container>-->
+<!--
 <owl-carousel-o [options]="customOptions" >
   <ng-template carouselSlide *ngIf="phim[0]">
     <img src="./assets/img/ted2-2.jpg" height="550px">
-    <div  class="slider">
-       <a [href]="phim[0].trailer">
+    <div class="slider">
+       <a data-toggle="modal" data-target="#myModal">
          <img src="./assets/img/icon-play.png" >
-      </a>
+       </a>
+      </div>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-body">
+                 <iframe width="100%" height="85%" [src]="phim[0].trailer"></iframe>
+                </div>
+          </div>
+          </div>
       </div>
   </ng-template>
   <ng-template carouselSlide *ngIf="phim[14]">
     <img src="./assets/img/infinity-war.jpg" height="550px">
     <div  class="slider">
-       <a [href]="phim[14].trailer">
-         <img src="./assets/img/icon-play.png"></a>
-      </div>
+        <a  data-toggle="modal" data-target="#myModal1">
+          <img src="./assets/img/icon-play.png" >
+        </a>
+       </div>
+       <div class="modal" id="myModal1">
+         <div class="modal-dialog">
+           <div class="modal-content">
+               <div class="modal-body">
+                  <iframe width="100%" height="85%" [src]="phim[14].trailer"></iframe>
+                 </div>
+           </div>
+           </div>
+       </div>
   </ng-template>
   <ng-template carouselSlide *ngIf="phim[5]">
     <img src="./assets/img/ant-man.jpg" height="550px">
     <div  class="slider">
-        <a [href]="phim[5].trailer">
-          <img src="./assets/img/icon-play.png">
+        <a  data-toggle="modal" data-target="#myModal2">
+          <img src="./assets/img/icon-play.png" >
         </a>
-      </div>
+       </div>
+       <div class="modal" id="myModal2">
+         <div class="modal-dialog">
+           <div class="modal-content">
+               <div class="modal-body">
+                  <iframe width="100%" height="85%" [src]="phim[5].trailer"></iframe>
+                 </div>
+           </div>
+           </div>
+       </div>
   </ng-template>
   <ng-template carouselSlide *ngIf="phim[6]">
       <img src="./assets/img/jurassic-world.jpg" height="550px">
       <div  class="slider">
-          <a [href]="phim[6].trailer">
-            <img src="./assets/img/icon-play.png">
+          <a data-toggle="modal" data-target="#myModal3">
+            <img src="./assets/img/icon-play.png" >
           </a>
-        </div>
+         </div>
+         <div class="modal" id="myModal3">
+           <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-body">
+                    <iframe width="100%" height="85%" [src]="phim[6].trailer"></iframe>
+                   </div>
+             </div>
+             </div>
+         </div>
     </ng-template>
     <ng-template carouselSlide *ngIf="phim[8]">
         <img src="./assets/img/max-mad.jpg" height="550px">
         <div  class="slider">
-            <a [href]="phim[8].trailer">
-              <img src="./assets/img/icon-play.png">
+            <a data-toggle="modal" data-target="#myModal4">
+              <img src="./assets/img/icon-play.png" >
             </a>
-          </div>
+           </div>
+           <div class="modal" id="myModal4">
+             <div class="modal-dialog">
+               <div class="modal-content">
+                   <div class="modal-body">
+                      <iframe width="100%" height="85%" [src]="phim[8].trailer"></iframe>
+                     </div>
+               </div>
+               </div>
+           </div>
       </ng-template>
 </owl-carousel-o>
-
-
-
-
-
-
+ -->
+ <ngb-carousel *ngIf="phim" class="my-carousel">
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="./assets/img/ted2-2.jpg" alt="ted2 slide" >
+         </div>
+          <div class="carousel-caption">
+            <a>
+                <img src='./assets/img/icon-play.png' >
+            </a>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="./assets/img/ant-man.jpg" alt="Ant man" >
+          </div>
+          <div class="carousel-caption">
+            <a [href]="phim[5].trailer">
+              <img src='./assets/img/icon-play.png' >
+          </a>
+          </div>
+        </ng-template>
+         <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="./assets/img/max-mad.jpg"  alt=" Max mad" >
+          </div>
+          <div class="carousel-caption">
+            <a [href]="phim[8].trailer">
+              <img src='./assets/img/icon-play.png' >
+          </a>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="./assets/img/infinity-war.jpg" alt="Infinity war" >
+          </div>
+          <div class="carousel-caption">
+            <a [href]="phim[14].trailer">
+              <img src='./assets/img/icon-play.png' >
+          </a>
+          </div>
+        </ng-template>
+</ngb-carousel>

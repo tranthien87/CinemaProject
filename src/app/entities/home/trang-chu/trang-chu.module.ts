@@ -6,14 +6,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MaterialModule } from 'src/app/commom/material/material.module';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { ModalTrailerComponent } from './carousel/modal-trailer/modal-trailer.component';
+
 
 
 
 
 
 @NgModule({
-  declarations: [TrangChuComponent, CarouselComponent, ModalTrailerComponent ],
+  declarations: [TrangChuComponent, CarouselComponent ],
   imports: [
     CommonModule, TrangChuRoutingModule, NgbModule, MaterialModule, CarouselModule ]
 })
