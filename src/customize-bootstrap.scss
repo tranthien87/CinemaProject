@@ -23,3 +23,13 @@ $theme-colors: map-merge(
     border-radius: 50%;
   }
 }
+.modal {
+  .modal-content {
+
+    left: -23% !important;
+    top: 40px !important;
+    width: 800px !important;
+
+
+  }
+}

@@ -88,44 +88,57 @@
 </owl-carousel-o>
  -->
  <ngb-carousel *ngIf="phim" class="my-carousel">
-        <ng-template ngbSlide>
+        <ng-template ngbSlide *ngIf="phim[0]">
           <div class="picsum-img-wrapper">
             <img src="./assets/img/ted2-2.jpg" alt="ted2 slide" >
          </div>
           <div class="carousel-caption">
-            <a>
+            <a (click)="open(contentTed)">
                 <img src='./assets/img/icon-play.png' >
             </a>
+            <ng-template #contentTed>
+              <iframe width="800px" height="500px" [src]="ted2"></iframe>
+          </ng-template >
           </div>
         </ng-template>
-        <ng-template ngbSlide>
+
+        <ng-template ngbSlide *ngIf="phim[5]">
           <div class="picsum-img-wrapper">
             <img src="./assets/img/ant-man.jpg" alt="Ant man" >
           </div>
           <div class="carousel-caption">
-            <a [href]="phim[5].trailer">
+            <a (click)="openAnt(contentAntMan)">
               <img src='./assets/img/icon-play.png' >
           </a>
+          <ng-template #contentAntMan>
+              <iframe width="800px" height="500px" [src]="antMan"></iframe>
+          </ng-template >
           </div>
         </ng-template>
-         <ng-template ngbSlide>
+         <ng-template ngbSlide *ngIf="phim[8]">
           <div class="picsum-img-wrapper">
             <img src="./assets/img/max-mad.jpg"  alt=" Max mad" >
           </div>
           <div class="carousel-caption">
-            <a [href]="phim[8].trailer">
+            <a (click)="openMadMax(contentMadMax)">
               <img src='./assets/img/icon-play.png' >
           </a>
+          <ng-template #contentMadMax>
+              <iframe width="800px" height="500px" [src]="madMax"></iframe>
+          </ng-template >
           </div>
         </ng-template>
-        <ng-template ngbSlide>
+        <ng-template ngbSlide *ngIf="phim[14]">
           <div class="picsum-img-wrapper">
             <img src="./assets/img/infinity-war.jpg" alt="Infinity war" >
           </div>
           <div class="carousel-caption">
-            <a [href]="phim[14].trailer">
+            <a (click)="openInfinity(contentInfinity)">
               <img src='./assets/img/icon-play.png' >
           </a>
+          <ng-template #contentInfinity>
+              <iframe width="800px" height="500px" [src]="infinity"></iframe>
+          </ng-template >
           </div>
         </ng-template>
 </ngb-carousel>

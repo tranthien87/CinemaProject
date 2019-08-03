@@ -1,69 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../src/customize-bootstrap.scss';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
-@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
-
-
-.owl-carousel {
-  .owl-item {
-    a img {
-      opacity: 1;
-      transition: all 0.7s;
-      &:hover {
-        opacity: .5;
-      }
-    }
-    .slider {
-      position: absolute !important;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-    }
-  }
-  .owl-nav {
-    overflow: hidden;
-    height: 0px;
-  }
-  .nav-btn {
-    height: 150px;
-    position: absolute;
-    width: 100px;
-    opacity: 1;
-    cursor: pointer;
-    top: 35% !important;
-    transition: all 0.7s;
-    &:hover {
-      opacity: .5;
-    }
-  }
-
-  .owl-next.disabled, .owl-prev.disabled {
-    pointer-events: none;
-    opacity: .2;
-  }
-  .prev-slide {
-    background: url(./assets/img/prev-icon.png) no-repeat ;
-    background-size:  100px 150px;
-    left: 5%;
-  }
-   .next-slide {
-    background: url(./assets/img/next-icon.png) no-repeat ;
-    background-size: 100px 150px;
-    right: 5%;
-  }
-}
 
 
 
 
 
 
-// .owl-carousel .prev-slide:hover {
-//   background-position: 0px -53px;
-// }
 
-// .owl-carousel .next-slide:hover {
-//   background-position: -24px -53px;
-// }
+
+
+
+

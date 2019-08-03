@@ -1,46 +1,42 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Phim } from 'src/app/commom/models/Phim';
-import { OwlOptions } from 'ngx-owl-carousel-o';
+import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { DomSanitizer} from '@angular/platform-browser';
 
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
-  styleUrls: ['./carousel.component.scss']
+  styleUrls: ['./carousel.component.scss'],
+  providers: [NgbModalConfig, NgbModal]
 })
 export class CarouselComponent implements OnInit {
-  constructor() { }
-@Input() phim: Phim[];
-// Carrousel Options
-  // customOptions: OwlOptions = {
-  //   loop: true,
-  //   mouseDrag: true,
-  //   touchDrag: true,
-  //   pullDrag: true,
-  //   dots: true,
-  //   navSpeed: 700,
-  //   navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
-  //   responsive: {
-  //     0: {
-  //       items: 1,
-  //       nav: false
-  //     },
-  //     400: {
-  //       items: 1,
-  //       nav: false
-  //     },
-  //     740: {
-  //       items: 1,
-  //       nav: true
-  //     },
-  //     940: {
-  //       items: 1,
-  //       nav: true
-  //     }
-  //   },
+  antMan: any;
+  madMax: any;
+  infinity: any;
+  ted2: any;
+  constructor(config: NgbModalConfig, private modalService: NgbModal, private sanitizer: DomSanitizer) {
 
-  // };
+  }
+@Input() phim: Phim[];
+
   ngOnInit() {
+    this.ted2 = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/S3AVcCggRnU');
+    this.antMan = this.sanitizer.bypassSecurityTrustResourceUrl( 'https://www.youtube.com/embed/1HpZevFifuo');
+    this.madMax = this.sanitizer.bypassSecurityTrustResourceUrl( 'https://www.youtube.com/embed/hEJnMQG9ev8');
+    this.infinity = this.sanitizer.bypassSecurityTrustResourceUrl( 'https://www.youtube.com/embed/DKqu9qc-5f4');
+  }
+  open(content) {
+    this.modalService.open(content);
+  }
+  openAnt(content) {
+    this.modalService.open(content);
+  }
+  openMadMax(contentMadMax) {
+    this.modalService.open(contentMadMax);
+  }
+  openInfinity(contentInfinity) {
+    this.modalService.open(contentInfinity);
   }
 
 }
