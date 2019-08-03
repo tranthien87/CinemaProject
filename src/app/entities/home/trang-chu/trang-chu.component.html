@@ -1,0 +1,51 @@
+<!-- Carousel Phim  -->
+ <!-- <ngb-carousel *ngIf="DanhSachPhim" class="my-carousel">
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="./assets/img/ted2-2.jpg" alt="ted2 slide" >
+         </div>
+          <div class="carousel-caption">
+            <a (click)="xemTrailer()">
+                <img src='./assets/img/icon-play.png' >
+            </a>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="./assets/img/ant-man.jpg" alt="Ant man" >
+          </div>
+          <div class="carousel-caption">
+            <a [href]="DanhSachPhim[5].trailer">
+              <img src='./assets/img/icon-play.png' >
+          </a>
+          </div>
+        </ng-template>
+         <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="./assets/img/max-mad.jpg"  alt=" Max mad" >
+          </div>
+          <div class="carousel-caption">
+            <a [href]="DanhSachPhim[8].trailer">
+              <img src='./assets/img/icon-play.png' >
+          </a>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="./assets/img/infinity-war.jpg" alt="Infinity war" >
+          </div>
+          <div class="carousel-caption">
+            <a [href]="DanhSachPhim[14].trailer">
+              <img src='./assets/img/icon-play.png' >
+          </a>
+          </div>
+        </ng-template>
+</ngb-carousel> -->
+<ng-container *ngIf="DanhSachPhim">
+    <app-carousel [phim]="DanhSachPhim"></app-carousel>
+</ng-container>
+
+
+
+
+

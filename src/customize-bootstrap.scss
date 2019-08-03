@@ -1,0 +1,25 @@
+$honey :                                   #f27013;
+$hover-color:                              #ffff;
+
+$navbar-light-color:                       $honey ;
+$navbar-light-hover-color:                 $hover-color;
+$navbar-light-brand-color:                 $honey ;
+$navbar-light-brand-hover-color:           $hover-color;
+// Carousel
+$carousel-indicator-width:                  1rem;
+$carousel-indicator-height:                 1rem;
+$theme-colors: () ;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "honey":      $honey,
+  ),
+  $theme-colors
+);
+.carousel-indicators  {
+  li {
+    width: $carousel-indicator-width !important;
+    height: $carousel-indicator-height !important;
+    border-radius: 50%;
+  }
+}

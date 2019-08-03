@@ -1,0 +1,50 @@
+<!-- <ng-container *ngIf="phim[0]">
+  <img [src]="phim[0].hinhAnh">
+</ng-container>-->
+<owl-carousel-o [options]="customOptions" >
+  <ng-template carouselSlide *ngIf="phim[0]">
+    <img src="./assets/img/ted2-2.jpg" height="550px">
+    <div  class="slider">
+       <a [href]="phim[0].trailer">
+         <img src="./assets/img/icon-play.png" >
+      </a>
+      </div>
+  </ng-template>
+  <ng-template carouselSlide *ngIf="phim[14]">
+    <img src="./assets/img/infinity-war.jpg" height="550px">
+    <div  class="slider">
+       <a [href]="phim[14].trailer">
+         <img src="./assets/img/icon-play.png"></a>
+      </div>
+  </ng-template>
+  <ng-template carouselSlide *ngIf="phim[5]">
+    <img src="./assets/img/ant-man.jpg" height="550px">
+    <div  class="slider">
+        <a [href]="phim[5].trailer">
+          <img src="./assets/img/icon-play.png">
+        </a>
+      </div>
+  </ng-template>
+  <ng-template carouselSlide *ngIf="phim[6]">
+      <img src="./assets/img/jurassic-world.jpg" height="550px">
+      <div  class="slider">
+          <a [href]="phim[6].trailer">
+            <img src="./assets/img/icon-play.png">
+          </a>
+        </div>
+    </ng-template>
+    <ng-template carouselSlide *ngIf="phim[8]">
+        <img src="./assets/img/max-mad.jpg" height="550px">
+        <div  class="slider">
+            <a [href]="phim[8].trailer">
+              <img src="./assets/img/icon-play.png">
+            </a>
+          </div>
+      </ng-template>
+</owl-carousel-o>
+
+
+
+
+
+
