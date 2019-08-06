@@ -17,7 +17,7 @@ export class TrangChuComponent implements OnInit {
 
   }
   getListMovie() {
-    const uri = 'QuanLyPhim/LayDanhSachPhim?maNhom=GP01';
+    const uri = 'QuanLyPhim/LayDanhSachPhim?maNhom=GP09';
     this.dataService.get(uri).subscribe(
       (data: Phim) => {
         this.DanhSachPhim = data;

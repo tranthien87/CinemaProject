@@ -25,11 +25,10 @@ $theme-colors: map-merge(
 }
 .modal {
   .modal-content {
-
     left: -23% !important;
     top: 40px !important;
     width: 800px !important;
-
+    background-color: transparent;
 
   }
 }

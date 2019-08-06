@@ -1,0 +1,27 @@
+<ngb-tabset id="lichchieu">
+  <ng-container>
+    <ngb-tab title="Phim Đang Chiếu">
+      <ng-template ngbTabContent>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3" *ngFor="let ItemPhim of DSPhim | paginate: { itemsPerPage: 8, currentPage: p }" >
+                <app-item-phim  [item]="ItemPhim"></app-item-phim>
+            </div>
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Phim Sắp Chiếu">
+      <ng-template ngbTabContent>
+          <div class="container">
+              <div class="row">
+                <div class="col-sm-3" *ngFor="let ItemPhim of DSPhim">
+                    <app-item-phim  [item]="ItemPhim"></app-item-phim>
+                </div>
+              </div>
+            </div>
+      </ng-template>
+    </ngb-tab>
+  </ng-container>
+  </ngb-tabset>
