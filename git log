@@ -1,0 +1,35 @@
+[33mcommit 8c2f1636d653da9dc6001fadef95d0a69a85953a[m[33m ([m[1;36mHEAD -> [m[1;32mken[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: NguyenThien <tranthien8789@gmail.com>
+Date:   Wed Aug 7 11:49:42 2019 +0700
+
+    push danh sach phim
+
+[33mcommit 4537786193957797deb0fc61b6641caa2935572e[m
+Author: NguyenThien <tranthien8789@gmail.com>
+Date:   Tue Aug 6 23:03:09 2019 +0700
+
+    finish list movie and make pagination done
+
+[33mcommit 0d7702fc5f873334d17bba7db72e1c855170ec7c[m
+Author: NguyenThien <tranthien8789@gmail.com>
+Date:   Sat Aug 3 15:47:51 2019 +0700
+
+     Carousel done
+
+[33mcommit 10283141b807bda3523a70dfaed3ee4636d09f5d[m
+Author: NguyenThien <tranthien8789@gmail.com>
+Date:   Sat Aug 3 11:05:37 2019 +0700
+
+    fix carousel
+
+[33mcommit 5806459339d32e3588802401e863fbb4210525e3[m
+Author: NguyenThien <tranthien8789@gmail.com>
+Date:   Sat Aug 3 09:10:35 2019 +0700
+
+    Fisrt upload cinema project
+
+[33mcommit b46852a701548e2d93ce4270adcda972780eb627[m
+Author: NguyenThien <tranthien8789@gmail.com>
+Date:   Thu Jul 18 11:44:22 2019 +0700
+
+    initial commit
