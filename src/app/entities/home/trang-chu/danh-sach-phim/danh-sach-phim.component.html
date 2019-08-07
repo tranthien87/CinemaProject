@@ -7,7 +7,8 @@
             <div class="col-sm-3" *ngFor="let ItemPhim of DSPhim | paginate: { itemsPerPage: 8, currentPage: p }" >
                 <app-item-phim  [item]="ItemPhim"></app-item-phim>
             </div>
-            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            <pagination-controls  class="my-pagination"  responsive="true" autoHide="true"  previousLabel="Previous"
+            nextLabel="Next" (pageChange)="p = $event"></pagination-controls>
           </div>
         </div>
       </ng-template>
@@ -16,9 +17,11 @@
       <ng-template ngbTabContent>
           <div class="container">
               <div class="row">
-                <div class="col-sm-3" *ngFor="let ItemPhim of DSPhim">
+                <div class="col-sm-3" *ngFor="let ItemPhim of DSPhim  | paginate: { itemsPerPage: 8, currentPage: p }">
                     <app-item-phim  [item]="ItemPhim"></app-item-phim>
                 </div>
+                <pagination-controls  class="my-pagination"  responsive="true" autoHide="true"  previousLabel="Previous"
+            nextLabel="Next" (pageChange)="p = $event"></pagination-controls>
               </div>
             </div>
       </ng-template>

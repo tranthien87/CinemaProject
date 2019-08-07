@@ -29,6 +29,9 @@ $theme-colors: map-merge(
     top: 40px !important;
     width: 800px !important;
     background-color: transparent;
-
+    border: 0;
+    iframe {
+      border: 0;
+    }
   }
 }
